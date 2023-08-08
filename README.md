@@ -12,7 +12,6 @@ git clone https://github.com/fjuton/meowcloud.git
 # install all node dependencies
 npm i
 npm run build
-# files should be built into ./dist 
-# now use something like tampermonkey or setup a google extension and run it at document-start to make it work
-# enjoy :3
+
+# to have a chrome extension just copy over the files from /extension/ to /dist/ and "load unpacked" in chrome://extension :3
 ```

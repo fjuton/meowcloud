@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "meowcloud",
+    "version": "1.0.0",
+    "description": "silly soundcloud extension :3",
+    "author": "wjuton",
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": ["*://*.soundcloud.com/*"],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ],
+
+    "web_accessible_resources": [
+        {
+            "resources": ["index.js"],
+            "matches": ["*://*.soundcloud.com/*"]
+        }
+        
+    ]
+
+}
