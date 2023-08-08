@@ -8,7 +8,6 @@ export const copyrightSeeker = () => {
     const SAMPLE_THRESHOLD = 10
     registerSongEvent("change:currentSound", async (song : {current?: any}) => {
         console.log(`meowcloud - song switched`)
-        console.log(song)
         try {
             let body = await fetch(`${song?.current?.attributes?.waveform_url}`, {
                 method: "GET"
