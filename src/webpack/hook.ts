@@ -1,7 +1,8 @@
 import { meowcloud } from "../api/core"
 
 export const initializeHook = (cb : any) => {
-
+    console.log("initializing hook")
+  
     Object.defineProperty(Object.prototype, "p", {
         set(value) {
             // let's hook into this l.p="https://a-v2.sndcdn.com/" variable
@@ -12,7 +13,6 @@ export const initializeHook = (cb : any) => {
                     configurable: true,
                     value: value
                 })
-                /* this wasn't the one we looking for :3 */
                 return
             }
     
@@ -24,5 +24,6 @@ export const initializeHook = (cb : any) => {
         get() {return this._value},
         configurable: true,
     })
+    
 }
 

@@ -4,9 +4,7 @@ import { initializeHook } from "./webpack/hook";
 
 initializeHook(() => {
     console.log("initialized!")
-    console.log(meowcloud)
-
-    console.info("meowcloud - intializing plugins")
+    console.info("meowcloud (v0.01) - intializing plugins")
     plugins.getPlugins().forEach(plugin => {
         try {
             plugin()
@@ -14,4 +12,6 @@ initializeHook(() => {
             console.error(`meowcloud - ${err}`)
         }
     })
+
+    console.log("finished initialization <3")
 })

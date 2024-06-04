@@ -7,6 +7,6 @@
     "esbuild": "0.19.0"
   },
   "scripts": {
-    "build": ".\\node_modules\\.bin\\esbuild --bundle src/index.ts --outdir=dist --minify"
+    "build": ".\\node_modules\\.bin\\esbuild --bundle src/index.ts --outdir=extension --minify"
   }
 }
